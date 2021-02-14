@@ -20,7 +20,7 @@ const CartIcon = ({
 const mapStqateToProps = ({ cart: { cartItems } }) => ({
   itemCount: cartItems
     .reduce(
-      (accumalatedQuantity, cartItem) => accumalatedQuantity + cartItem.quantity,
+      (accumulatedQuantity, cartItem) => accumulatedQuantity + cartItem.quantity,
       0,
     ),
 });
