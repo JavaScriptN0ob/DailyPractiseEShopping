@@ -2,6 +2,11 @@ import { createSelector } from 'reselect';
 
 const selectCart = (state) => state.cart;
 
+const selectCartHidden = createSelector(
+  [selectCart],
+  (cart) => cart.hidden,
+);
+
 const selectCartItems = createSelector(
   [selectCart],
   (cart) => cart.cartItems,
@@ -16,4 +21,8 @@ const selectCartItemsCount = createSelector(
     ),
 );
 
-export { selectCartItemsCount as default };
+export {
+  selectCartItemsCount as default,
+  selectCartItems,
+  selectCartHidden,
+};
