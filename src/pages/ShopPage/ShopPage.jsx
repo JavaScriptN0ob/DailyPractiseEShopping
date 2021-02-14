@@ -1,6 +1,6 @@
 import React from 'react';
 
-import COLLECTION_DATA from './COLLECTION_DATA';
+import COLLECTION_DATA from '../../constants/COLLECTION_DATA';
 
 import PreviewCollection from '../../components/PreviewCollection';
 
